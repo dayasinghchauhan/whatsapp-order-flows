@@ -1,0 +1,8 @@
+{
+  "name": "wa-cod-lifecycle",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.13" },
+  "scripts": { "test": "node --test \"tests/*.test.mjs\"" }
+}

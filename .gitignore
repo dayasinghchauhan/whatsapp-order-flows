@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.dev.vars
+*.local.sql
+decoys.local.sql
+.env
+.env.*
+.DS_Store
