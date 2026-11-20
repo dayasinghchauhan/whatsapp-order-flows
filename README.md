@@ -1,11 +1,18 @@
-# wa-cod-lifecycle
+# whatsapp-order-flows
 
-[![tests](https://github.com/dayasinghchauhan/wa-cod-lifecycle/actions/workflows/test.yml/badge.svg)](https://github.com/dayasinghchauhan/wa-cod-lifecycle/actions/workflows/test.yml)
+[![tests](https://github.com/dayasinghchauhan/whatsapp-order-flows/actions/workflows/test.yml/badge.svg)](https://github.com/dayasinghchauhan/whatsapp-order-flows/actions/workflows/test.yml)
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![deps](https://img.shields.io/badge/dependencies-0-brightgreen)
 
-**A Claude Code skill for cash-on-delivery (COD) order handling over the WhatsApp Cloud API directly. No
+**A Claude Code skill that automates an online shop's order messages over the WhatsApp Cloud API directly. No
 BotSailor, Zoko or CampaignHQ subscription.**
+
+Four flows (abandoned checkout works on its own; order again builds on COD confirmation):
+
+1. **COD confirmation**: Yes / No buttons before the courier is booked.
+2. **Address check**: a weak address is fixed on WhatsApp (typed reply or location pin) before shipping.
+3. **Order again**: one message, once per number, after a COD order is cancelled for no answer.
+4. **Abandoned checkout**: "you left X in your bag", at most 2 per week, never after they ordered.
 
 Built for Indian D2C shops, where a large share of orders are COD and many come back undelivered (RTO).
 Every RTO costs two-way shipping. Most of it is avoidable if you **ask before you ship** and **fix the
@@ -54,7 +61,7 @@ retry does nothing), and the sweep's memory.
 ## Install as a Claude Code skill
 
 ```bash
-git clone https://github.com/dayasinghchauhan/wa-cod-lifecycle ~/.claude/skills/wa-cod-lifecycle
+git clone https://github.com/dayasinghchauhan/whatsapp-order-flows ~/.claude/skills/whatsapp-order-flows
 ```
 
 Then ask Claude, for example:

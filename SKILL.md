@@ -1,10 +1,10 @@
 ---
-name: wa-cod-lifecycle
-description: Run cash-on-delivery (COD) order handling for an online shop over the WhatsApp Cloud API directly, with no paid tool (BotSailor, Zoko, CampaignHQ). It covers the COD confirm/cancel buttons, address check before booking the courier, location pin, the 6 h reminder and 24 h owner alert, undeliverable-number handling, a one-time "order again" message for silent cancellations, and abandoned-checkout reminders with a frequency cap. Built for Indian D2C shops (high COD, high RTO) on Cloudflare Pages/Workers + D1; the logic is plain JS. Use it when someone asks to reduce RTO, confirm COD orders on WhatsApp, recover abandoned carts on WhatsApp, or replace a WhatsApp automation SaaS. Do not use it for WhatsApp chatbots, broadcast campaigns or customer support inboxes.
+name: whatsapp-order-flows
+description: Automate an online shop's order messages over the WhatsApp Cloud API directly, with no paid tool (BotSailor, Zoko, CampaignHQ). Four flows: cash-on-delivery (COD) confirmation, address check before the courier, "order again" after a silent cancellation, and abandoned-checkout reminders. It covers the COD confirm/cancel buttons, address check before booking the courier, location pin, the 6 h reminder and 24 h owner alert, undeliverable-number handling, a one-time "order again" message for silent cancellations, and abandoned-checkout reminders with a frequency cap. Built for Indian D2C shops (high COD, high RTO) on Cloudflare Pages/Workers + D1; the logic is plain JS. Use it when someone asks to reduce RTO, confirm COD orders on WhatsApp, recover abandoned carts on WhatsApp, or replace a WhatsApp automation SaaS. Do not use it for WhatsApp chatbots, broadcast campaigns or customer support inboxes.
 license: MIT
 ---
 
-# wa-cod-lifecycle
+# whatsapp-order-flows
 
 In India a large share of online orders are COD, and many come back
 undelivered (RTO): the buyer changed their mind, the address was unfindable, the

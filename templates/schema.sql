@@ -1,4 +1,4 @@
--- wa-cod-lifecycle tables.  wrangler d1 execute <DB> --remote --file templates/schema.sql
+-- whatsapp-order-flows tables.  wrangler d1 execute <DB> --remote --file templates/schema.sql
 --
 -- `orders` is YOUR table. These columns are what the templates read; map names
 -- in config.js if yours differ. Status values used here:
